@@ -1,7 +1,7 @@
 print("Simple Calculator")
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+n1 = float(input("Enter 1st number: "))
+n2 = float(input("Enter 2nd number: "))
 
 print("1. Addition")
 print("2. Subtraction")
@@ -11,17 +11,16 @@ print("4. Division")
 choice = input("Enter your choice (1/2/3/4): ")
 
 if choice == '1':
-	print("Result:", num1 + num2)
-
+	print("Result:", n1 + n2)
 elif choice == '2':
-	print("Result:", num1 - num2)
+	print("Result:", n1 - n2)
 
 elif choice == '3':
-	print("Result:", num1 * num2)
+	print("Result:", n1 * n2)
 
 elif choice == '4':
-	if num2 != 0:
-		print("Result:", num1 / num2)
+	if n2 != 0:
+		print("Result:", n1 / n2)
 	else:
 		print("Cannot divide by zero")
 
